@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+      integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="cart_style.css">
+    
+</head>
+<body>
+    <!--header-->
+    <div id="nav">
+        <div id="logo-div">
+          <h1 id="logo">shop.</h1>
+        </div>
+        <div>
+          <ul id="nav-ul">
+            <li><a href="../ecomerce-web/index.html">Home</a></li>
+            <li><a href="../men/men.html">Men</a></li>
+            <li><a href="../aditicsy/womenn.html">Women</a></li>
+            <li><a href="../Gadgets/gadgets.html">Gadgets</a></li>
+            <li><a href="../shoes/category1.html">Shoes</a></li>
+            <li>
+         
+              <a href="../cart_section/carts.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+            </li>
+           
+            <li>
+              <a href="../ecomerce-web/signUp.html"><i class="fa-regular fa-user fa-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    <!--cart part-->
+    <div class="wrapper">
+
+        <div class="cart-details">
+            <!--My_bag_section_left-->
+            <div class="my-bag-section">
+                <div class="heading-part">
+                    <h2>My Bag</h2>
+                    
+                </div>
+
+                <div class="carts-products">
+                    <!--showing products of carts-->
+                    <div class="products">
+                        <div class="left">
+                           <a href="#">
+                            <img src="https://assets.ajio.com/medias/sys_master/root/20211013/NiBc/6166262baeb26901108e7692/-473Wx593H-460807243-black-MODEL.jpg" alt="Puma cap" class="product-image" loading="lazy">
+                           </a>
+                           <a href="#">
+                            <p class="product-description">
+                                Puma-Men Poly Cotton Cap IND
+                            </p>
+                           </a>
+                        </div>
+
+                        <div class="middle">
+                            <label for="size">Size</label>
+                            <select name="size" id="size">
+                                <option value="small">S</option>
+                                <option value="medium">M</option>
+                                <option value="large">L</option>
+                                <option value="extralarge">XL</option>
+                            </select>
+
+                            <label for="Quantity">Qty</label>
+                            <select name="Quantity" id="Quantity">
+                                <option value="ek">1</option>
+                                <option value="do">2</option>
+                                <option value="teen">3</option>
+                                <option value="char">4</option>
+                            </select>
+                        </div>
+
+                        <div class="right">
+
+                            <div class="product-saving">
+                              
+                                Savings :
+                                
+                                <span class="cart-total-saving">
+                                    <strong>Rs. 449.00</strong>
+                                    
+                                </span>
+                            </div>
+
+                            <p><strike>Rs. 1,299.00</strike><span> (29%)</span></p>
+                            <p class="discounted-price"> Rs.922.00</p>
+
+                            <div class="wishlist-icon">
+                                <span>
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
+                                Remove from bag
+                                
+                            </div>
+
+                            
+
+
+
+                        </div>
+                        
+                    </div>
+
+                    <!--product 2-->
+                    <div class="products">
+                        <div class="left">
+                           <a href="#">
+                            <img src="https://assets.ajio.com/medias/sys_master/root/20240213/qPC6/65cb850405ac7d77bb538935/-473Wx593H-4934804710-multi-MODEL.jpg" loading="lazy">
+                           </a>
+                           <a href="#">
+                            <p class="product-description">
+                                FASTRACK -Men NP3097SM01 Black Dial Silver Stainless Steel Strap Watch
+                            </p>
+                           </a>
+                        </div>
+
+                        <div class="middle">
+                            <label for="size">Size</label>
+                            <select name="size" id="size">
+                                <option value="small">FreeSize</option>
+                                
+                            </select>
+
+                            <label for="Quantity">Qty</label>
+                            <select name="Quantity" id="Quantity">
+                                <option value="ek">1</option>
+                                <option value="do">2</option>
+                                <option value="teen">3</option>
+                                <option value="char">4</option>
+                            </select>
+                        </div>
+
+                        <div class="right">
+
+                            <div class="product-saving">
+                                
+                                Savings :
+                                
+                                <span class="cart-total-saving">
+                                    <strong>Rs. 175.00</strong>
+                                    
+                                </span>
+                            </div>
+
+                            <p><strike>Rs. 3,495.00</strike><span> (5%)</span></p>
+                            <p class="discounted-price"> Rs.3,320.00</p>
+
+                            <div class="wishlist-icon">
+                                <span>
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
+                                Remove from bag
+                                
+                            </div>
+                            
+
+
+
+                        </div>
+                        
+                    </div>
+
+                    <!--product 3-->
+                    <div class="products">
+                        <div class="left">
+                           <a href="#">
+                            <img src="https://assets.ajio.com/medias/sys_master/root/20231012/ht6a/6527aa16ddf779151935d787/-288Wx360H-465738251-black-MODEL.jpg" loading="lazy">
+                           </a>
+                           <a href="#">
+                            <p class="product-description">
+                                PUMA -Men Scorch Runner V2 Shoes
+                            </p>
+                           </a>
+                        </div>
+
+                        <div class="middle">
+                            <label for="size">Size</label>
+                            <select name="size" id="size">
+                                <option value="small">7</option>
+                                <option value="medium">8</option>
+                                <option value="large">9</option>
+                                <option value="extralarge">10</option>
+                            </select>
+
+                            <label for="Quantity">Qty</label>
+                            <select name="Quantity" id="Quantity">
+                                <option value="ek">1</option>
+                                <option value="do">2</option>
+                                <option value="teen">3</option>
+                                <option value="char">4</option>
+                            </select>
+                        </div>
+
+                        <div class="right">
+
+                            <div class="product-saving">
+                                
+                                Savings :
+                                
+                                <span class="cart-total-saving">
+                                    <strong>Rs. 2,749.00</strong>
+                                    
+                                </span>
+                            </div>
+
+                            <p><strike>Rs. 4,999.00</strike><span> (55%)</span></p>
+                            <p class="discounted-price"> Rs.2,250.00</p>
+
+                            <div class="wishlist-icon">
+                                <span>
+                                    <i class="fa-solid fa-trash"></i>
+                                </span>
+                                Remove from bag
+                                
+                            </div>
+                            
+
+
+
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+
+            <!--Order_details_right-->
+            <div class="order-details">
+                <div class="order-info">
+                    <h3>Order Details</h3>
+                
+                    <div class="order-total">
+                    <div class="order-summary">
+                        <p>Bag total</p>
+                        <p>&#8377;9,393</p>
+                    </div>
+                    <div class="order-summary">
+                        <p>Bag discount</p>
+                        <p class="discount-bag">-&#8377;3,490</p>
+                    </div>
+                    <div class="order-summary">
+                        <p>Convenience Fee</p>
+                        
+                    </div>
+                    <div class="order-summary Fee">
+                        <p>Delivery Fee</p>
+                        <p><span class="discount-bag">Free</span> 
+                            <strike>&#8377;70</strike>
+                        </p>
+                    </div>
+                    <div class="order-summary Fee">
+                        <p>Platform Fee</p>
+                        <p>&#8377;100</p>
+                    </div>
+                    
+
+                    <div class="total-amount">
+                        <p>Order Total</p>
+                        <p>&#8377;5,903</p>
+                    </div>
+                    </div>
+
+                    <div class="checkout-button">
+                        <button >PROCEED TO SHIPPING</button>
+                    </div>
+                </div>
+
+                <!--coupon section-->
+
+                <div class="coupon-section">
+                    <div class="coupon-content">
+                        <strong>Apply Coupon</strong>
+
+                        <div class="enter-coupon-feild">
+                            <input type="text" placeholder="Enter coupon code" class="coupon-code-input">
+                            <button class="apply-button">Apply</button>
+
+                        </div>
+
+                        <div class="applicable-coupons">
+                            <strong>Applicable Coupons</strong>
+
+                           
+                            <ul class="coupon-list">
+                                <!--coupon 1-->
+                                <li class="coupon-items">
+
+                                    <div class="coupons">
+                                        <input type="radio" class="offer-radio" name="vouchers" id="SALE300">
+                                        <div class="coupon-detail-info">
+
+                                            <p class="saving-text">
+                                                <strong>Savings :
+                                                    <span>&#8377;300</span>
+                                                </strong>
+                                            </p>
+
+                                            <p class="voucher-code">SALE300</p>
+
+                                            <p class="voucher-description">Get Upto Rs.300 Off on 1990 and Above.</p>
+                                            <a href="#" class="terms-condition">View T & C</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                                <!--coupon 2-->
+                                <li class="coupon-items">
+
+                                    <div class="coupons">
+                                        <input type="radio" class="offer-radio" name="vouchers" id="SALE300">
+                                        <div class="coupon-detail-info">
+
+                                            <p class="saving-text">
+                                                <strong>Savings :
+                                                    <span>&#8377;250</span>
+                                                </strong>
+                                            </p>
+
+                                            <p class="voucher-code">GET250</p>
+
+                                            <p class="voucher-description">Get Upto Rs.250 Off on 2090 and Above.</p>
+                                            <a href="#" class="terms-condition">View T & C</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+
+                                <!--coupon 3-->
+                                <li class="coupon-items">
+
+                                    <div class="coupons">
+                                        <input type="radio" class="offer-radio" name="vouchers" id="SALE300">
+                                        <div class="coupon-detail-info">
+
+                                            <p class="saving-text">
+                                                <strong>Savings :
+                                                    <span>&#8377;1</span>
+                                                </strong>
+                                            </p>
+
+                                            <p class="voucher-code">FREEDEL</p>
+
+                                            <p class="voucher-description">Free Shipping on 799 and above. Just for you.</p>
+                                            <a href="#" class="terms-condition">View T & C</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+                                <!--coupon 3-->
+                                <li class="coupon-items">
+
+                                    <div class="coupons">
+                                        <input type="radio" class="offer-radio" name="vouchers" id="SALE300">
+                                        <div class="coupon-detail-info">
+
+                                            <p class="saving-text">
+                                                <strong>Savings :
+                                                    <span>&#8377;1</span>
+                                                </strong>
+                                            </p>
+
+                                            <p class="voucher-code">FREEDEL</p>
+
+                                            <p class="voucher-description">Free Shipping on 799 and above. Just for you.</p>
+                                            <a href="#" class="terms-condition">View T & C</a>
+                                        </div>
+                                    </div>
+
+                                </li>
+
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Refund policy section-->
+
+                <div class="refund-policy-section">
+                    <div class="refund-content">
+
+                        <p class="refund-heading">
+                            <strong>Return/Refund policy</strong>
+
+                        </p>
+
+                        <div class="refund-description">
+                            <p>In case of return, we ensure quick refunds. Full amount will be refunded excluding Convenience Fee</p>
+                        </div>
+
+                        <p class="refund-read-policy">
+                            <strong>Read Policy</strong>
+                        </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+
+
+    <!--Cart footer-->
+    <div class="cart-footer">
+
+        <header>
+            <div class="cart-footer-border"></div>
+
+            <div class="header-right">
+                <ul>
+                    <li class="cart-footer-item">
+                        <i class="fa-solid fa-shield-halved cart-icon"></i>
+                        <span>Secure Payments</span>
+                    </li>
+
+                    <li class="cart-footer-item">
+                        <i class="fa-solid fa-indian-rupee-sign cart-icon"></i>
+                        <span>Cash on delivery</span>
+                    </li>
+
+                    <li class="cart-footer-item">
+                        <i class="fa-solid fa-award cart-icon"></i>
+                        <span>Assured Quality</span>
+                    </li>
+
+                    <li class="cart-footer-item">
+                        <i class="fa-solid fa-rotate cart-icon"></i>
+                        <span>Easy return</span>
+                    </li>
+                </ul>
+            </div>
+        </header>
+
+
+    </div>
+
+
+    <!--footer section-->
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Payment Method</h3>
+            <div class="credit-cards">
+                <img src="img/visa.png" alt="">
+                <img src="img/mastercard.png" alt="">
+                <img src="img/paypal.png" alt="">
+            </div>
+            <p class="copyright">2024 shop.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>India</span> Delhi</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 077-777-77</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">support@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About</span>
+               Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum facilis ab qui repudiandae corporis 
+               nesciunt exercitationem ad quidem aperiam, eveniet tempora maxime sint doloremque iure dolorum, eius
+                veritatis rerum magni.
+            </p>
+
+            <div class="footer-media">
+                <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+              
+            </div>
+        </div>
+
+    </footer>
+</body>
+</html>

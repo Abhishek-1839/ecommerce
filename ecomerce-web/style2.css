@@ -1,0 +1,636 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "secular one";
+    font-family: "neu";
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100%;
+  }
+  
+  #main {
+    background-color: black;
+  }
+  
+  .loaders {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    text-align: center;
+    display: none;
+  }
+  
+  .loaders h1 {
+    font-size: 6.9vh;
+    line-height: 6vw;
+    font-weight: 800;
+    color: rgb(243, 240, 240);
+    letter-spacing: -2px;
+    position: relative;
+    z-index: 9;
+  }
+  
+  .loaders video {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index: 6;
+  }
+  
+  #yellow1 {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(245, 228, 27);
+    z-index: 8;
+  }
+  
+  #yellow2 {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(245, 228, 27);
+    z-index: 7;
+  }
+  
+  #nav {
+    position: absolute;
+    width: 100%;
+    padding: 30px 50px;
+    z-index: 10;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #nav-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  #nav-ul li {
+    margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+  
+  #nav-ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    color: rgb(28, 28, 29);
+    cursor: pointer;
+  }
+  
+  #nav-ul li a:hover {
+    padding: 10px 10px;
+    background-color: rgba(84, 8, 236, 0.936);
+    box-shadow: 2px 2px;
+  }
+  
+  #page1 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(245, 228, 27);
+    background-image: url("./images/kv_galaxy-z-flip5.jpg");
+    background-size: cover;
+    object-position: center;
+  }
+  
+  #page1 h1 {
+    font-size: 17vh;
+    line-height: vw;
+    text-transform: uppercase;
+    font-weight: bolder;
+    color: rgba(36, 33, 33, 0.937);
+    letter-spacing: -2px;
+    position: absolute;
+    top: 25%;
+    left: 30px;
+    z-index: 11;
+  }
+  
+  #page1 button {
+    color: rgba(84, 8, 236, 0.936);
+    padding: 5px 10px;
+    font-size: 12vh;
+    background-color: transparent;
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+  }
+  
+  #page1 button:hover {
+    background-color: rgba(84, 8, 236, 0.936);
+    color: white;
+  }
+  
+  #page1 #img1 {
+    position: absolute;
+    top: 16%;
+    right: 10%;
+    background: none;
+    height: 300px;
+    width: 300px;
+  }
+  
+  #page1 #img2 {
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    background: none;
+    height: 700px;
+    width: 700px;
+    opacity: 0.3;
+  }
+  
+  #page2 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(16, 16, 16);
+    background-image: url("./images/dolce-and-gabbana-changemakers-of-luxury-premiazione-cnmi-zalando-mage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: rgba(213, 254, 10, 0.936);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  .elem {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .elem .moving .blur {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgb(242, 13, 13), rgb(242, 13, 13), rgb(242, 13, 13));
+    height: 100%;
+    z-index: 8;
+  }
+  
+  .elem h2 {
+    font-size: 6.8vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 5vw;
+    position: relative;
+    z-index: 9;
+  }
+  
+  .elem .moving {
+    background-color: rgb(242, 13, 13);
+    width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -45%) scaleY(0);
+    padding: 8px 0;
+    transition: all ease 0.5s;
+  }
+  
+  .elem .moving .moving-in {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .elem .moving .moving-in h5 {
+    color: black;
+    display: inline-block;
+    font-size: 17px;
+    transition: all ease 0.5s;
+    opacity: 0;
+    transition-delay: 0.1s;
+    font-weight: 500;
+    font-family: gilroy;
+    text-transform: uppercase;
+    margin-right: 35px;
+  }
+  
+  @keyframes moving {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .elem:hover .moving {
+    transform: translate(0, -45%) scaleY(1);
+  }
+  
+  .elem:hover .moving h5 {
+    opacity: 1;
+  }
+  
+  .elem:hover h2 {
+    font-style: italic;
+  }
+  
+  #page3 {
+    height: 100vh;
+    width: 100%;
+    background-color: rgb(236, 235, 221);
+  }
+  
+  #page3 h1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    padding-top: 40px;
+  }
+  
+  #products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+  }
+  
+  /* Product Styles */
+  .product {
+    display: block;
+    padding: 10px 10px;
+    width: fit-content;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px black;
+    margin-top: 15px;
+  }
+  
+  .product img {
+    height: 400px;
+  }
+  
+  .product h3 {
+    margin-top: 15px;
+  }
+  
+  .product button {
+    padding: 10px 5px;
+    box-shadow: 3px 3px black;
+    margin-top: 15px;
+    cursor: pointer;
+  }
+  
+  .product i {
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  
+  #page4 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #page4 #category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  #page4 #category #cat1 h2 {
+    position: absolute;
+    color: #c23f3fbe;
+    font-size: 70px;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  #page5 {
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  #page5 #category {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+  #page5 #category #cat1 h2 {
+    position: absolute;
+    color: #4613e0a6;
+    font-size: 70px;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+  }
+  
+  /* Media Queries */
+  @media screen and (max-width: 768px) {
+    #nav {
+      padding: 15px 25px;
+    }
+  
+    #nav-ul li {
+      margin-left: 10px;
+    }
+  
+    #page1 h1 {
+      font-size: 10vw;
+    }
+  
+    #page1 button {
+      padding: 3px 8px;
+      font-size: 5vw;
+    }
+  
+    #page1 #img1 {
+      height: 20%;
+      width: 20%;
+    }
+  
+    #page1 #img2 {
+      height: 50%;
+      width: 50%;
+    }
+  
+    .elem h2 {
+      font-size: 6vw;
+      line-height: 7vw;
+    }
+  
+    .elem .moving .moving-in h5 {
+      font-size: 4vw;
+    }
+  
+    .product img {
+      height: 250px;
+    }
+  
+    .product h3 {
+      font-size: 4vw;
+    }
+  
+    .product button {
+      padding: 5px 3px;
+      font-size: 3vw;
+    }
+  
+    #page4 #category #cat1 h2 {
+      font-size: 8vw;
+    }
+  
+    #page5 #category #cat1 h2 {
+      font-size: 8vw;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    #nav {
+      padding: 10px 20px;
+    }
+  
+    #nav-ul li {
+      margin-left: 5px;
+    }
+  
+    #page1 h1 {
+      font-size: 12vw;
+    }
+  
+    #page1 button {
+      padding: 3px 5px;
+      font-size: 4vw;
+    }
+  
+    #page1 #img1 {
+      height: 15%;
+      width: 15%;
+    }
+  
+    #page1 #img2 {
+      height: 40%;
+      width: 40%;
+    }
+  
+    .elem h2 {
+      font-size: 4.5vw;
+      line-height: 6vw;
+    }
+  
+    .elem .moving .moving-in h5 {
+      font-size: 3vw;
+    }
+  
+    .product img {
+      height: 200px;
+    }
+  
+    .product h3 {
+      font-size: 3.5vw;
+    }
+  
+    .product button {
+      padding: 4px 2px;
+      font-size: 2.5vw;
+    }
+  
+    #page4 #category #cat1 h2 {
+      font-size: 6vw;
+    }
+  
+    #page5 #category #cat1 h2 {
+      font-size: 6vw;
+    }
+  }
+
+  
+  footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    background-color: #040a18;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 20px;
+    /* font-family: Georgia, 'Time New Roman', Times, serif; */
+}
+
+.footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-cards {
+    width: 100%;
+}
+
+.footer .footer-copyright {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.footer .footer-center {
+    width: 35%;
+}
+
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: rgb(22, 255, 177);
+    text-decoration: none;
+}
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media {
+    margin-top: 25px;
+}
+
+.footer .footer-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover {
+    background-color: rgb(0, 122, 82);
+}
+
+@media (max-width: 880px) {
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0px;
+    }
+
+}

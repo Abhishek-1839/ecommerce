@@ -1,0 +1,978 @@
+@font-face {
+    font-family: neu;
+    src: url(./NeueHaasDisplayMediu.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "secular one";
+  font-family: "neu";
+  
+ 
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+#main{
+    background-color: black;
+}
+
+
+.loaders {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: fixed;
+    color: wheat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    text-align: center;
+    display: none;
+    
+}
+.loaders h1 {
+    font-size: 6.9vh;
+    line-height: 6vw;
+    font-weight: 800;
+    color: rgb(243, 240, 240);
+    letter-spacing: -2px;
+    position: relative;
+    z-index:9 ;
+  }
+  .loaders video{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit: cover;
+    z-index:6;
+
+  }
+  #yellow1 {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(245, 228, 27);
+    z-index: 8;
+      
+  }
+  #yellow2 {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    background-color: rgb(245, 228, 27);
+    z-index: 7;
+      
+  }
+  <header class="header" data-header>
+
+    <div class="top-bar">
+      <div class="container">
+        <p>Free shipping for all order of $105</p>
+      </div>
+    </div>
+
+    <div class="nav-wrapper">
+      <div class="container">
+
+        <h1 class="h1">
+          <a href="./index.html" class="logo">Organ<span class="span">ica</span></a>
+        </h1>
+
+        <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn>
+          <ion-icon name="menu-outline"></ion-icon>
+        </button>
+
+        <nav class="navbar" data-navbar>
+
+          <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn>
+            <ion-icon name="close-outline"></ion-icon>
+          </button>
+
+          <ul class="navbar-list">
+
+            <li>
+              <a href="./index.html" class="navbar-link">Home</a>
+            </li>
+
+            <li>
+              <a href="./about.html" class="navbar-link">About</a>
+            </li>
+
+            <li>
+              <a href="./shop.html" class="navbar-link">Shop</a>
+            </li>
+
+            <li>
+              <a href="./blog.html" class="navbar-link">Blog</a>
+            </li>
+
+            <li>
+              <a href="./shop.html" class="navbar-link">Products</a>
+            </li>
+
+            <li>
+              <a href="./contact.html" class="navbar-link">Contact</a>
+            </li>
+`
+          </ul>
+
+        </nav>
+
+        <div class="header-action">
+
+          <div class="search-wrapper" data-search-wrapper>
+
+            <button class="header-action-btn" aria-label="Toggle search" data-search-btn>
+              <ion-icon name="search-outline" class="search-icon"></ion-icon>
+              <ion-icon name="close-outline" class="close-icon"></ion-icon>
+            </button>
+
+            <div class="input-wrapper">
+              <input type="search" name="search" placeholder="Search here" class="search-input">
+
+              <button class="search-submit" aria-label="Submit search">
+                <ion-icon name="search-outline"></ion-icon>
+              </button>
+            </div>
+
+          </div>
+
+          <button class="header-action-btn" aria-label="Open whishlist" data-panel-btn="whishlist">
+            <ion-icon name="heart-outline"></ion-icon>
+
+            <data class="btn-badge" value="3">03</data>
+          </button>
+
+          <button class="header-action-btn" aria-label="Open shopping cart" data-panel-btn="cart">
+            <ion-icon name="basket-outline"></ion-icon>
+
+            <data class="btn-badge" value="2">02</data>
+          </button>
+
+        </div>
+
+      </div>
+    </div>
+
+  </header>
+
+
+
+
+
+  <!-- 
+    - #ASIDE
+  -->
+
+  <aside class="aside">
+
+    <div class="side-panel" data-side-panel="whishlist">
+
+      <button class="panel-close-btn" aria-label="Close whishlist" data-panel-btn="whishlist">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <ul class="panel-list">
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-small-1.jpg" width="46" height="46" loading="lazy"
+                alt="Bright Side Vegetarian">
+            </figure>
+
+            <div>
+              <p class="item-title">Bright Side Vegetarian</p>
+
+              <span class="item-value">$20.15x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-small-2.jpg" width="46" height="46" loading="lazy" alt="Eco Vegetable">
+            </figure>
+
+            <div>
+              <p class="item-title">Eco Vegetable</p>
+
+              <span class="item-value">$13.25x2</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-small-3.jpg" width="46" height="46" loading="lazy"
+                alt="House of Veggies">
+            </figure>
+
+            <div>
+              <p class="item-title">House of Veggies</p>
+
+              <span class="item-value">$20.15x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="subtotal">
+        <p class="subtotal-text">Subtotal:</p>
+
+        <data class="subtotal-value" value="215.14">$215.14</data>
+      </div>
+
+      <a href="./whishlist.html" class="panel-btn">View Whishlist</a>
+
+    </div>
+
+    <div class="side-panel" data-side-panel="cart">
+
+      <button class="panel-close-btn" aria-label="Close cart" data-panel-btn="cart">
+        <ion-icon name="close-outline"></ion-icon>
+      </button>
+
+      <ul class="panel-list">
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-small-1.jpg" width="46" height="46" loading="lazy"
+                alt="Bright Side Vegetarian">
+            </figure>
+
+            <div>
+              <p class="item-title">Bright Side Vegetarian</p>
+
+              <span class="item-value">$20.15x1</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+        <li class="panel-item">
+          <a href="./product-details.html" class="panel-card">
+
+            <figure class="item-banner">
+              <img src="./assets/images/product-small-2.jpg" width="46" height="46" loading="lazy" alt="Eco Vegetable">
+            </figure>
+
+            <div>
+              <p class="item-title">Eco Vegetable</p>
+
+              <span class="item-value">$13.25x2</span>
+            </div>
+
+            <button class="item-close-btn" aria-label="Remove item">
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+          </a>
+        </li>
+
+      </ul>
+
+      <div class="subtotal">
+        <p class="subtotal-text">Subtotal:</p>
+
+        <data class="subtotal-value" value="215.14">$215.14</data>
+      </div>
+
+      <a href="./cart.html" class="panel-btn">View Cart</a>
+
+    </div>
+
+  </aside>
+
+  /* #nav{
+    position: absolute;
+    width: 100%;
+    padding:30px 50px ;
+    z-index: 10;
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+  }
+  #nav-ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+  }
+  #nav-ul li{
+     list-style-type: none;/
+     margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+  }
+  #nav-ul li a{
+    text-decoration: none;
+    font-size: 15px;
+   
+    
+    color: rgb(28, 28, 29);
+    cursor: pointer;
+  }
+ 
+  #nav-ul li a:hover{
+    padding: 10px 10px;
+    background-color: rgba(84, 8, 236, 0.936);
+    box-shadow: 2px 2px;
+  } */ 
+}
+#page1 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(245, 228, 27);
+  background-image: url("./images/kv_galaxy-z-flip5.jpg");
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center; */
+  background-size: cover;
+  object-position: center;
+  
+}
+#page1 h1 {
+  font-size: 17vh;
+  line-height: vw;
+  text-transform: uppercase;
+  font-weight: bolder;
+  color: rgba(36, 33, 33, 0.937);
+  letter-spacing: -2px;
+  position: absolute;
+  top: 25%;
+  left: 30px;
+  z-index: 11;
+  /* margin-top: 170px; */
+}
+#page1 button{
+    color: rgba(84, 8, 236, 0.936);
+    padding: 5px 10px;
+    font-size: 12vh;
+   
+    background-color:transparent ;
+    box-shadow: 5px 5px black;
+    cursor: pointer;
+}
+#page1 button:hover{
+    background-color: rgba(84, 8, 236, 0.936);
+    color: white;
+}
+#page1 #img1{
+    position: absolute;
+    top: 16%;
+    right: 10%;
+    background: none;
+    height: 300px;
+    width: 300px;
+  
+
+}
+#page1 #img2{
+    position: absolute;
+    top: 10%;
+    left: 0%;
+    background: none;
+    height: 700px;
+    width: 700px;
+    opacity: 0.3;
+  
+
+}
+#page2 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(16, 16, 16);
+  background-image: url("./images/dolce-and-gabbana-changemakers-of-luxury-premiazione-cnmi-zalando-mage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  /* transition: all ease 0.5s; */
+  color: rgba(213, 254, 10, 0.936);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+.elem {
+    width: 100%;
+    position: relative;
+    cursor: pointer;
+  }
+  
+  .elem .moving .blur {
+    position: absolute;
+    width: 40%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: linear-gradient(to right, rgb(242, 13, 13), rgb(242, 13, 13), rgb(242, 13, 13));
+    height: 100%;
+    z-index: 8;
+  }
+  
+  .elem h2 {
+    font-size: 6.8vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    line-height: 5vw;
+    position: relative;
+    z-index: 9;
+  }
+  
+  .elem .moving {
+    background-color: rgb(242, 13, 13);
+    width: 100%;
+    white-space: nowrap;
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -45%) scaleY(0);
+    padding: 8px 0;
+    transition: all ease 0.5s;
+  }
+  
+  .elem .moving .moving-in {
+    white-space: nowrap;
+    display: inline-block;
+    animation-name: moving;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  
+  .elem .moving .moving-in h5 {
+    color: black;
+    display: inline-block;
+    font-size: 17px;
+    transition: all ease 0.5s;
+    opacity: 0;
+    transition-delay: 0.1s;
+    font-weight: 500;
+    font-family: gilroy;
+    text-transform: uppercase;
+    margin-right: 35px;
+  }
+  
+  @keyframes moving {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  
+  .elem:hover .moving {
+    transform: translate(0, -45%) scaleY(1);
+  }
+  
+  .elem:hover .moving h5 {
+    opacity: 1;
+  }
+  
+  .elem:hover h2 {
+    font-style: italic;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+#page3 {
+  height: 100vh;
+  width: 100%;
+  background-color: rgb(236, 235, 221);
+ 
+ 
+}
+#page3 h1{
+    /* padding-top: 20px; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bolder;
+    padding-top: 40px;
+}
+#products{
+    display: flex;
+    justify-content: center;
+    object-position: center;
+    align-items: center;
+    padding-top: 30px;
+}
+
+/* Product-1 */
+#page3 #product1{
+    display: block;
+    padding: 10px 10px;
+    width: fit-content;
+    background-color: transparent;
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px black;
+}
+#page3 #product1 #img1{
+    height: 400px;
+    
+}
+#page3 #product1 h3{
+   margin-top: 15px;
+    
+}
+#page3 #shirt{
+    font-size:20px;
+    margin-top: 15px;
+}
+#page3 #cart-btn{
+    padding: 10px 5px;
+    background-color:rgba(84, 8, 236, 0.936); ;
+    color: aliceblue;
+    box-shadow: 3px 3px black;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#page3 #product1 i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+.wishlist-btn {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.wishlist-btn.red {
+    color: red;
+}
+
+
+/* Product-2 */
+
+#page3 #product2{
+    display: block;
+    padding: 10px 10px;
+    width: fit-content;
+    background-color: rgba(177, 78, 188, 0.633);
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px black;
+}
+#page3 #product2 #img2{
+    height: 400px;
+    
+}
+#page3 #product1 h3{
+   margin-top: 15px;
+    
+}
+#page3 #shirt{
+    font-size:20px;
+    margin-top: 15px;
+}
+#page3 #cart-btn{
+    padding: 10px 5px;
+    background-color:rgba(35, 58, 206, 0.955); ;
+    color: aliceblue;
+    box-shadow: 3px 3px black;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#page3 #product2 i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Product-3 */
+
+#page3 #product3{
+    display: block;
+    padding: 10px 10px;
+    width: fit-content;
+    background-color: rgba(115, 187, 73, 0.648);
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px black;
+}
+#page3 #product3 #img3{
+    height: 400px;
+    
+}
+#page3 #product3 h3{
+   margin-top: 15px;
+    
+}
+#page3 #shirt{
+    font-size:20px;
+    margin-top: 15px;
+}
+#page3 #cart-btn{
+    padding: 10px 5px;
+    background-color:rgba(84, 8, 236, 0.936); ;
+    color: aliceblue;
+    box-shadow: 3px 3px black;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#page3 #product3 i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+/* Product-4 */
+
+#page3 #product4{
+    display: block;
+    padding: 10px 10px;
+    width: fit-content;
+    background-color: rgba(230, 12, 12, 0.57);
+    align-items: center;
+    text-align: center;
+    margin: auto;
+    box-shadow: 3px 3px 3px 3px black;
+}
+#page3 #product4 #img4{
+    height: 400px;
+    width: 360px;
+    
+}
+#page3 #product4 h4{
+   margin-top: 15px;
+    
+}
+#page3 #shirt{
+    font-size:20px;
+    margin-top: 15px;
+}
+#page3 #cart-btn{
+    padding: 10px 5px;
+    background-color:rgba(84, 8, 236, 0.936); ;
+    color: aliceblue;
+    box-shadow: 3px 3px black;
+    margin-top: 15px;
+    cursor: pointer;
+}
+#page3 #product4 i{
+    margin-left: 20px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+#page4{
+    height: 100vh;
+    width: 100%;
+   background-image: url("./images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+#page4 #category{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+     justify-content: space-around;
+}
+#page4 #category #cat1 {
+ 
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    top: 80%;
+ }
+#page4 #category #cat1 img{
+   height: 100vh;
+   width: 100%;
+}
+#page4 #category #cat1 h2{
+    /* z-index: 12; */
+    
+   position: absolute;
+    color: #c23f3fbe;
+    font-size: 70px;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+    
+
+ }
+
+
+#page5{
+    height: 100vh;
+    width: 100%;
+    background-image: url("./images/mike-petrucci-c9FQyqIECds-unsplash.jpg");
+   background-size: cover;
+   background-repeat: no-repeat;
+   background-position: center;
+}
+#page5 #category{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+     justify-content:space-between;
+}
+#page5 #category #cat1 {
+ 
+    align-items: center;
+    text-align: center;
+    font-size: 40px;
+    top: 80%;
+ }
+#page5 #category #cat1 img{
+   height: 100vh;
+    width:100%;
+}
+#page5 #category #cat1 h2{
+    /* z-index: 12; */
+    
+   position: absolute;
+    color: #4613e0a6;
+    font-size: 70px;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+   
+    
+
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    position: fixed;
+    bottom: 0;
+}
+
+.footer {
+    background-color: #040a18;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 20px;
+    /* font-family: Georgia, 'Time New Roman', Times, serif; */
+}
+
+.footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-cards {
+    width: 100%;
+}
+
+.footer .footer-copyright {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.footer .footer-center {
+    width: 35%;
+}
+
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: rgb(22, 255, 177);
+    text-decoration: none;
+}
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media {
+    margin-top: 25px;
+}
+
+.footer .footer-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover {
+    background-color: rgb(0, 122, 82);
+}
+
+@media (max-width: 880px) {
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0px;
+    }
+
+}
+
+
+
+

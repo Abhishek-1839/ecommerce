@@ -1,0 +1,768 @@
+*,*::before,*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: poppins;
+
+}
+
+html {
+    background-color: #ffffff;
+    
+}
+
+body {
+    font: 16px;
+    font-family: poppins;
+    background-color: #fffbeb;
+    
+}
+
+
+
+#nav {
+    position: relative;
+    width: 100%;
+    padding: 30px 50px;
+
+    background-color: transparent;
+    display: flex;
+    justify-content: space-between;
+}
+
+#nav-ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+
+}
+
+#nav-ul li {
+
+    margin-left: 40px;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+
+}
+
+#nav-ul li a {
+    text-decoration: none;
+    font-size: 20px;
+
+
+    color: rgb(28, 28, 29);
+    cursor: pointer;
+}
+
+#nav-ul li a:hover {
+    text-decoration: underline;
+    transition: ease-out 1s;
+}
+
+
+
+
+
+
+
+/* cart site css property */
+
+.wrapper {
+    height: 100%;
+    width: 100%;
+    margin: 2.5rem 0rem;
+}
+
+.cart-details{
+    height: 100%;
+    width: 1320px;
+    margin: 0 auto;
+    margin: 0 auto;
+    display: flex;
+    gap: 2rem;
+    display: flex;
+
+
+}
+@media screen and (max-width:1320px) {
+    .cart-details{
+        flex-direction: column;
+        align-items: center;
+    }
+}
+@media screen and (max-width:1130px) {
+    .cart-details{
+        flex-direction: column;
+       
+    }
+    .order-details{
+        position: relative;
+        left: -100px;
+    }
+    .my-bag-section{
+        align-items: start;
+    }
+    .heading-part a{
+        opacity: 0;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .cart-details{
+        align-items: start;
+    }
+    .order-details{
+        left:155px
+    }
+    .cart-footer{
+        opacity: 0;
+    }
+}
+
+.my-bag-section{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+
+.heading-part{
+    display: flex;
+    justify-content: space-between;
+}
+.heading-part h2{
+    vertical-align: baseline;
+    color: #181818;
+    font-weight: 600;
+}
+.heading-part a{
+    text-decoration: none;
+    color: #176d93;
+    font-weight: bold;
+
+}
+@media screen and (max-width:113) {
+    .my-bag-section{
+        width: 100%;
+    }
+}
+
+
+.carts-products{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.products{
+    width: 100%;
+    
+    height: 11rem;
+    border: 0.5px solid rgba(190, 185, 185, 0.995);
+    border-radius: 5px;
+    
+    display: flex;
+    justify-content: space-between;
+    overflow: hidden;
+}
+
+
+
+.left {
+    display: flex;
+    text-decoration: none;
+    gap: 2rem;
+   
+}
+.left a{
+    text-decoration: none;
+}
+.left a img{
+   
+    overflow: hidden;
+    height: 100%;
+    width: 8rem;
+
+}
+.product-description{
+    color: #505050;
+    max-width: 150px;
+    font-weight: 400;
+    font-size: 15px;
+    font-family: neu;
+    text-decoration: none;
+    line-height: 1.30rem;
+    padding: 1.30rem 0rem;
+    padding-right: 0.75rem;
+}
+.product-description:hover{
+    color: #181818;
+}
+
+.middle{
+    padding: 1.30rem 0rem;
+    padding-right: 0.75rem;
+}
+
+.middle label{
+    color: #505050;
+    font-size: 15px;
+    margin-left: 1rem;
+    font-weight: 400;
+    line-height: 1.30rem;
+}
+.middle select{
+    border: none;
+    color: black;
+    font-weight: bold;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    max-width: 250px;
+    gap: 0.30rem;
+    padding: 1.30rem 0rem;
+    padding-right: 0.75rem;
+}
+
+
+.right  i{
+    position: relative;
+    top: 95%;
+    left: -20%;
+    
+}
+
+.right strike,span{
+    color: #866528;
+    font-size: 15px;
+    font-weight: 800;
+    line-height: 1.30rem;
+}
+
+.discounted-price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 2rem;
+    
+    background-color: #e1ecf1;
+    border-left: 5px solid #176c93;
+    padding: 0 10px;
+    /* display: inline-block; */
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+}
+
+.product-saving {
+    color: #505050;
+    font-size: 15px;
+    line-height: 0.30rem;
+}
+
+.wishlist-icon {
+    color: #176d93;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    font-size: 14px;
+    display: flex;  
+    gap: 3px;  
+}
+/* .wishlist-icon img{
+    position: relative;
+    top: 5px;
+    height: 15px;
+    padding-right: 2px;
+} */
+.wishlist-icon span i{
+    color: #176d93;
+    position: relative;
+    top: 0px;
+    font-size: 14px;
+}
+
+.wishlist-icon:hover{
+    color: #181818;
+}
+.wishlist-icon span i:hover{
+    color: #181818;
+}
+
+
+
+/* order details css property */
+
+.order-details{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+    height: fit-content;
+}
+
+.order-info{
+    border: 1px solid #BEBEBE;
+    background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.order-details h3{
+    line-height: 1.29;
+    letter-spacing: normal;
+    text-align: left;
+    color: #333;
+    font-size: large;
+    font-weight: 700;
+    padding: 0 10px;
+    padding-top: 20px;
+}
+
+.order-total{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.order-summary{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 1.30rem;
+    color: #333;
+    padding: 0 10px;
+}
+
+.Fee{
+    color: #6d6d6d;
+    margin-left: 10px;
+    font-size: 14px;
+    
+}
+.discount-bag{
+    color: #866528;
+}
+
+.total-amount{
+    display: flex;
+    justify-content: space-between;
+    font-size: 17px;
+    line-height: 1.30rem;
+    color: #333;
+    font-weight: 600;
+    padding: 0 10px;
+}
+
+.checkout-button{
+    width: 100%;
+
+}
+.checkout-button button{
+    width: 100%;
+    background-color: #866528;
+    padding: 0 20px;
+    text-transform: uppercase;
+    color: #fff !important;
+    font-size: 15px;
+    font-weight: 600;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    height: 50px;
+    line-height: 50px;
+    border: none;
+}
+
+
+/* coupon section start */
+.coupon-section{
+    border: 1px dashed #b09975;
+    padding: 20px 10px 10px;
+    position: relative;
+    min-height: 324px;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    height: 390px;
+    max-height: 90vh;
+}
+
+.coupon-content{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    
+}
+.coupon-content strong{
+    font-weight: 700;
+    font-size: 15px;
+    
+    color: #333;
+}
+
+.enter-coupon-feild{
+    height: 40px;
+}
+.coupon-code-input{
+    border: 1px solid #eee;
+    height: 40px;
+    width: 75%;
+    float: left;
+    border-radius: 1px;
+    padding: 0 5px 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+    outline: none;
+}
+
+.apply-button{
+    padding: 0 10px;
+    background-color: #f5f5f5;
+    color: #333;
+    width: 25%;
+    border: none;
+    float: left;
+    min-width: 64px;
+    height: 40px;
+    
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: .04em;
+    line-height: 36px;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    overflow: hidden;
+    vertical-align: middle;
+}
+
+.applicable-coupons{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    height: 290px !important;
+    overflow: auto;
+    scrollbar-width: none;
+    
+}
+
+
+.coupon-list{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.coupons{
+    position: relative;   
+}
+
+.offer-radio{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+   
+    z-index: 2;
+    cursor: pointer;
+
+    color: #333;
+    font-size: 20px;
+    position: absolute;
+    left: 0px;
+    top: 1px;
+}
+
+.coupon-detail-info{
+    width: 100%;
+    
+    padding-left: 35px;
+}
+
+.saving-text{
+    font-weight: 700;
+    margin-bottom: 5px;
+}
+
+.voucher-code{
+    font-size: 15px;
+    margin-bottom: 5px;
+
+}
+.voucher-description{
+    font-size: 14px;
+    
+    color: #333;
+
+}
+
+.terms-condition{
+    color: #176d93;
+    text-decoration: none;
+    font-size: 12px;
+
+}
+
+/* refund policy start */
+
+.refund-policy-section{
+    background-color: #fafafa;
+    padding: 20px 15px 20px 14px;
+    border: 1px solid #eee;
+}
+
+.refund-content{
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.refund-heading strong{
+    color: #202020;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.refund-description{
+    font-size: 14px;
+    font-weight: 400;
+    color: #202020;
+}
+
+.refund-read-policy strong{
+    font-size: 15px;
+    font-weight: 700;
+    color: #307597;
+}
+
+/* cart footer CSS */
+.cart-footer{
+    position: relative;
+    top: auto;
+    border-top: 1px solid#e1e1e1;
+    margin-top: 30px;
+    z-index: auto;
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    height: 100px;
+    font-family: SourceSansPro;
+}
+
+.cart-footer header{
+    height: 100%;
+    width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-right{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul{
+    list-style: none;
+    vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+}
+.cart-footer-item{
+    display: inline-block;
+    text-transform: uppercase;
+    color: #866528;
+    padding-right: 30px;
+    font-size: 15px;
+    opacity: 1;
+    
+    list-style: none;
+}
+
+.cart-icon{
+    font-size: 15px;
+    display: inline-block;
+   
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+
+
+/* --------------------footer--------------------- */
+
+
+footer {
+    position: static;
+    bottom: 0;
+}
+
+.footer {
+    background-color: #040a18;
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 50px 50px 60px 50px;
+    margin-top: 80px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+    display: inline-block;
+    vertical-align: top;
+}
+
+@media (max-height:800px) {
+    footer {
+        position: static;
+    }
+
+    header {
+        padding-top: 40px;
+    }
+}
+
+.footer .footer-left {
+    width: 30%;
+}
+
+.footer h3 {
+    color: #f5f5f5;
+    margin: 0;
+    padding-bottom: 20px;
+    font-family: neu;
+}
+
+.footer .footer-left img {
+    width: 25%;
+    vertical-align: middle;
+}
+
+.footer .footer-left .credit-cards {
+    width: 100%;
+}
+
+.footer .copyright {
+    color: #8f9296;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 0;
+    padding-top: 10%;
+}
+
+.footer .footer-center {
+    width: 35%;
+}
+
+.footer .footer-center i {
+    background-color: #33383b;
+    color: #ffffff;
+    font-size: 25px;
+    width: 38px;
+    height: 38px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 42px;
+    margin: 10px 15px;
+    vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+    font-size: 17px;
+    line-height: 38px;
+}
+
+.footer .footer-center p {
+    display: inline-block;
+    color: #ffffff;
+    vertical-align: middle;
+    margin: 0px;
+}
+
+.footer .footer-center p span {
+    display: block;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 2;
+}
+
+.footer .footer-center p a {
+    color: rgb(22, 255, 177);
+    text-decoration: none;
+}
+
+.footer .footer-right {
+    width: 30%;
+}
+
+.footer .footer-about {
+    line-height: 20px;
+    color: #92999f;
+    font-size: 13px;
+    font-weight: normal;
+    margin: 0px;
+}
+
+.footer .footer-about span {
+    display: block;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.footer .footer-media {
+    margin-top: 25px;
+}
+
+.footer .footer-media a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    background-color: #33383b;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 50px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+}
+
+.footer .footer-media a:hover {
+    background-color: rgb(0, 122, 82);
+}
+
+@media (max-width: 880px) {
+
+    .footer .footer-left,
+    .footer .footer-center,
+    .footer .footer-right {
+        display: block;
+        width: 100%;
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer .footer-center i {
+        margin-left: 0px;
+    }
+
+}

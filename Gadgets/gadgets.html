@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="gad.css">
+</head>
+
+<body>
+
+    <!-- nav section here -->
+    <nav class="navbar">
+        <a href="../ecomerce-web/index.html" class="nav-cname"><h1>shop.</h1></a>
+        <div class="hamburger">
+          <span class="baro"></span>
+          <span class="baro"></span>
+          <span class="baro"></span>
+        </div>
+        <div class="rightpart">
+          <ul class="nav-menu">
+            <li class="nav-item">
+              <a href="../ecomerce-web/index.html" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="../men/men.html" class="nav-link">Men</a>
+            </li>
+            <li class="nav-item">
+              <a href="../aditicsy/womenn.html" class="nav-link">Women</a>
+            </li>
+            <li class="nav-item">
+              <a href="../Gadgets/gadgets.html" class="nav-link">Gadgets</a>
+            </li>
+            <li class="nav-item">
+              <a href="../shoes/category1.html" class="nav-link">Shoes</a>
+            </li>
+          </ul>
+          <ul class="icon">
+            <li>
+              <a href="../cart_section/carts.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+            </li>
+            <li>
+              <a href="../ecomerce-web/signUp.html"><i class="fa-regular fa-user fa-lg"></i></a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+    <!-- <div id="nav">
+        <div id="logo-div">
+            <h1 id="logo">shop.</h1>
+        </div>
+        <div>
+            <ul id="nav-ul">
+                <li><a href="../ecomerce-web/index.html">Home</a></li>
+                <li><a href="../men/men.html">Men</a></li>
+                <li><a href="../aditicsy/womenn.html">Women</a></li>
+                <li><a href="../Gadgets/gadgets.html">Gadgets</a></li>
+                <li><a href="../shoes/category1.html">Shoes</a></li>
+                <li>
+
+                    <a href="../cart_section/carts.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+                </li>
+                
+                <li>
+                    <a href="../ecomerce-web/signUp.html"><i class="fa-regular fa-user fa-lg"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div> -->
+
+
+
+    <!-- ----------------------------------------- -->
+
+
+    <!-- cards section -->
+    <section class="hero">
+
+        <div class="hero-text">
+            <h1>Discover Your Perfect Gadgets.</h1>
+            <a href="../ecomerce-web/index.html">shop.</a>
+        </div>
+        <div id="hero-overlay"></div>
+    </section>
+
+    <div id="container">
+        <div class="offer">
+            <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="75"><h1>SUMMER OFFER 100% OFF</h1></marquee>
+        </div>
+        <!-- <div class="offer-1">
+            <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="75"><h1>SUMMER OFFER 100% OFF</h1></marquee>
+        </div> -->
+        <div class="filter">
+            <h3 style="font-size: 23px; font: bolder;margin-left: 20px;">FILTERS</h3>
+            <hr style="margin-left: 16px;">
+            <div class="filter-category">
+                <h4 style="margin-left: 20px;margin-top: 20px;font-size: 18px;">Most Popular</h4>
+                <div class="filter-options"
+                    style="margin-left: 25px;margin-top: 10px;font-size: 15;margin-bottom: 30px;">
+                    <label><input type="checkbox" name="size" value="xs">Apple Vision Pro</label><br>
+                    <label><input type="checkbox" name="size" value="s"> Samsung Balle</label><br>
+                    <label><input type="checkbox" name="size" value="m"> Rabbit R1</label><br>
+                    <label><input type="checkbox" name="size" value="l"> Humane AI Pin</label><br>
+                    <label><input type="checkbox" name="size" value="xl"> Unitree Go2</label><br>
+                    <!-- Add more size options as needed -->
+                </div>
+            </div>
+            <div class="filter-category">
+                <h4 style="margin-left: 20px;margin-top: 20px;font-size: 18px;">Top Categories</h4>
+                <div class="filter-options"
+                    style="margin-left: 25px;margin-top: 10px;font-size: 15;margin-bottom: 30px;">
+                    <label><input type="checkbox" name="color" value="red"> Cool New Gadgets</label><br>
+                    <label><input type="checkbox" name="color" value="blue"> Travel Gadgets</label><br>
+                    <label><input type="checkbox" name="color" value="green"> Smart Home and IoT</label><br>
+                    <label><input type="checkbox" name="color" value="black"> Office Gadgets</label><br>
+                    <label><input type="checkbox" name="color" value="purple"> Pet Accessories</label><br>
+                    <label><input type="checkbox" name="color" value="white"> Gaming Gadgets</label><br>
+                    <label><input type="checkbox" name="color" value="olivegreen"> Tech and Gadgets</label><br>
+                    <label><input type="checkbox" name="color" value="yellow"> Vacuums</label><br>
+                    <label><input type="checkbox" name="color" value="maroon"> Smart Living</label><br>
+                    <!-- Add more color options as needed -->
+                </div>
+            </div>
+
+            <!-- Brand Filter -->
+            <div class="filter-category">
+                <h4 style="margin-left: 20px;margin-top: 20px;font-size: 18px;">BRAND</h4>
+                <div class="filter-options"
+                    style="margin-left: 25px;margin-top: 10px;font-size: 15;margin-bottom: 30px;">
+                    <label><input type="checkbox" name="brand" value="nike"> Asus</label><br>
+                    <label><input type="checkbox" name="brand" value="adidas"> Acer</label><br>
+                    <label><input type="checkbox" name="brand" value="puma"> Philips</label><br>
+                    <label><input type="checkbox" name="brand" value="highlander"> Samsung</label><br>
+                    <label><input type="checkbox" name="brand" value="roadster"> Lenovo</label><br>
+                    <label><input type="checkbox" name="brand" value="wrogn"> hp</label><br>
+                    <label><input type="checkbox" name="brand" value="arrow"> Apple</label><br>
+                    <label><input type="checkbox" name="brand" value="levis"> Sony</label><br>
+                    <label><input type="checkbox" name="brand" value="sree"> Blackberry</label><br>
+                    <!-- Add more brand options as needed -->
+                </div>
+            </div>
+            <div class="filter-category">
+                <h4 style="margin-left: 20px;margin-top: 20px;font-size: 18px;">Price</h4>
+                <div class="filter-options"
+                    style="margin-left: 25px;margin-top: 10px;font-size: 15;margin-bottom: 30px;">
+                    <label><input type="checkbox" name="price" value="p1"> Rs. 249 to Rs. 499</label><br>
+                    <label><input type="checkbox" name="price" value="p2"> Rs. 499 to Rs. 999</label><br>
+                    <label><input type="checkbox" name="price" value="p3"> Rs. 999 to Rs. 1499</label><br>
+                    <label><input type="checkbox" name="price" value="p4"> Rs. 1499 to Rs. 1999</label><br>
+                    <label><input type="checkbox" name="price" value="p5"> Rs. 1999 and above</label><br>
+                    <!-- Add more size options as needed -->
+                </div>
+            </div>
+            <div class="filter-category">
+                <h4 style="margin-left: 20px;margin-top: 20px;font-size: 18px;">DISCOUNTS</h4>
+                <div class="filter-options"
+                    style="margin-left: 25px;margin-top: 10px;font-size: 15;margin-bottom: 30px;">
+                    <label><input type="checkbox" name="disc" value="d1"> 10% and above</label><br>
+                    <label><input type="checkbox" name="disc" value="d2"> 20% and above</label><br>
+                    <label><input type="checkbox" name="disc" value="d3"> 30% and above</label><br>
+                    <label><input type="checkbox" name="disc" value="d4"> 40% and above</label><br>
+                    <label><input type="checkbox" name="disc" value="d5"> 50% and above</label><br>
+                    <label><input type="checkbox" name="disc" value="d5"> 60% and above</label><br>
+                    <label><input type="checkbox" name="disc" value="d5"> 70% and above</label><br>
+                    <label><input type="checkbox" name="disc" value="d5"> 80% and above</label><br>
+                    <label><input type="checkbox" name="disc" value="d5"> 90% and above</label><br>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <hr>
+        </div>
+        <div class="right">
+            <div id="card">
+                <div id="image">
+                    <img src="./img/Headphone.avif">
+                </div>
+                <div id="des">
+                    <h1>Headphone</h1>
+                    <p>Black Color Headgear</p>
+                    <h3>₹1400</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="card">
+                <div id="image">
+                    <img src="./img/Camera.jpeg">
+                </div>
+                <div id="des">
+                    <h1>Camera</h1>
+                    <p>DSLR</p>
+                    <h3>₹1800</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="card">
+                <div id="image">
+                    <img src="./img/Earpods.avif" >
+                </div>
+                <div id="des">
+                    <h1>Earpods</h1>
+                    <p>White Color earbuds</p>
+                    <h3>₹2200</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                    
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div id="card">
+                <div id="image">
+                    <img src="./img/Gaming Consile.avif" alt="">
+                </div>
+                <div id="des">
+                    <h1>GameConsole</h1>
+                    <p>Latest Gaming Console</p>
+                    <h3>₹8000</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+            <div id="card">
+                <div id="image">
+                    <img src="./img/Laptop.avif" alt="">
+                </div>
+                <div id="des">
+                    <h1>Laptops</h1>
+                    <p>High Performance Laptop</p>
+                    <h3>₹3000</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="card">
+                <div id="image">
+                    <img src="./img/PS6.png" alt="">
+                </div>
+                <div id="des">
+                    <h1> PS6</h1>
+                    <p>PlayStation 6</p>
+                    <h3>₹800</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div id="card">
+                <div id="image">
+                    <img src="./img/iphonexs.avif" alt="">
+                </div>
+                <div id="des">
+                    <h1>IPHONEXS</h1>
+                    <p>iphonexs</p>
+                    <h3>₹1400</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+            <div id="card">
+                <div id="image">
+                    <img src="./img/RGbkeyboard.avif" alt="">
+                </div>
+                <div id="des">
+                    <h1> RGb Keyboard</h1>
+                    <p>RGB Keyboard for Gaming</p>
+                    <h3>₹950</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+
+
+            <div id="card">
+                <div id="image">
+                    <img src="./img/applewatch.avif" alt="">
+                </div>
+                <div id="des">
+                    <h1> Apple Watch</h1>
+                    <p> Apple Watch Series</p>
+                    <h3>₹5000</h3>
+                    <div id="button">
+                        <button id="cart"><i class="fa-solid fa-cart-shopping"></i></button>
+                        
+                        <button id="buy">Buy now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <!-- footer section -->
+    <footer class="footer">
+        <div class="footer-left">
+            <h3>Payment Method</h3>
+            <div class="credit-cards">
+                <img src="img/visa.png" alt="">
+                <img src="img/mastercard.png" alt="">
+                <img src="img/paypal.png" alt="">
+            </div>
+            <p class="copyright">2024 shop.</p>
+        </div>
+
+        <div class="footer-center">
+            <div>
+                <i class="fa fa-map-marker"></i>
+                <p><span>India</span> Delhi</p>
+            </div>
+            <div>
+                <i class="fa fa-phone"></i>
+                <p>+91 077-777-77</p>
+            </div>
+            <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#">support@gmail.com</a></p>
+            </div>
+        </div>
+
+        <div class="footer-right">
+            <p class="footer-about">
+                <span>About</span>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum facilis ab qui repudiandae corporis
+                nesciunt exercitationem ad quidem aperiam, eveniet tempora maxime sint doloremque iure dolorum, eius
+                veritatis rerum magni.
+            </p>
+
+            <div class="footer-media">
+                <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></i></a>
+                <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+                <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+
+            </div>
+        </div>
+
+    </footer>
+    <script>document.addEventListener("DOMContentLoaded", function() {
+        const hamburger = document.querySelector(".hamburger");
+        const navMenu = document.querySelector(".nav-menu");
+    
+        hamburger.addEventListener("click", function() {
+            hamburger.classList.toggle("active");
+            navMenu.classList.toggle("active");
+        });
+    });</script>
+
+</body>
+
+</html>
