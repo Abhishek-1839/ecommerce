@@ -1,4 +1,26 @@
+var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    loop: true,
+    parallax: true,
 
+    autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+  });
+//   var swiper = new Swiper(".mySwiper", {
+//     speed: 600,
+//     parallax: true,
+//     pagination: {
+//       el: ".swiper-pagination",
+//       clickable: true,
+//     },
+//     navigation: {
+//       nextEl: ".swiper-button-next",
+//       prevEl: ".swiper-button-prev",
+//     },
+//   });
 function loading(){
     var tl=gsap.timeline()
 tl.to('#yellow1',{
@@ -36,17 +58,17 @@ const scroll = new LocomotiveScroll({
     smooth: true
 });
 
-var elems=document.querySelectorAll(".elem");
-var page2=document.querySelector("#page2")
-elems.forEach(function(elem){
-    elem.addEventListener("mouseenter",function(){
-        var bg=elem.getAttribute("data-img");
-        page2.style.backgroundImage= `url(${bg})`
+// var elems=document.querySelectorAll(".elem");
+// var page2=document.querySelector("#page2")
+// elems.forEach(function(elem){
+//     elem.addEventListener("mouseenter",function(){
+//         var bg=elem.getAttribute("data-img");
+//         page2.style.backgroundImage= `url(${bg})`
       
-    })
+//     })
       
 
-})
+// })
 
 
 document.getElementById("wishlist-btn").addEventListener("click", function() {

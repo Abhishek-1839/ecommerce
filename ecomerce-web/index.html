@@ -7,6 +7,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css"
     />
+  
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
@@ -27,6 +28,10 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Passion+One:wght@400;700;900&family=Secular+One&display=swap"
       rel="stylesheet"
     />
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
     
     <link rel="stylesheet" href="styles.css" />
     <title>Document</title>
@@ -52,18 +57,25 @@
       <div id="logo-div">
         <h1 id="logo">shop.</h1>
       </div>
-    
+      <!-- <div id="search-bar">
+        <input type="text" id="search-input" placeholder="Search...">
+        
+      </div> -->
+      
       <div>
         
         <ul id="nav-ul">
-            <input type="text" id="search-input" placeholder="Search...">
-            <button id="search-button"><i class="fa-solid fa-search fa-lg"></i></button>
+      
 
           <li><a href="./index.html">Home</a></li>
           <li><a href="../men/men.html">Men</a></li>
-          <li><a href="../aditicsy/womenn.html">Women</a></li>
+          <li><a href="../Newfolder/women1.html">Women</a></li>
+          <li><a href="../Gadgets/gadgets copy.html">Gadgets</a></li>
           <li><a href="../shoes/category1.html">Shoes</a></li>
-          <li><a href="../Gadgets/gadgets.html">Gadgets</a></li>
+          
+          <li><input type="text" id="search-input" placeholder="Search...">
+            <button id="search-button"><i class="fa-solid fa-search fa-lg"></i></button></li>
+          
          
           
          
@@ -73,7 +85,13 @@
                 <span class="badge">5</span> 
             </a>
         </li>
-       
+          <!-- <li>
+            <a href="/" class="icon-badge-wrapper">
+                <i class="fa-regular fa-heart fa-lg"></i>
+                <span class="badge">2</span> 
+            </a>
+        </li> -->
+        
           <li>
             <a href="./signUp.html"><i class="fa-regular fa-user fa-lg"></i></a>
           </li>
@@ -82,61 +100,24 @@
     </div>
 
     <div id="main">
-      <div id="page1" data-scroll data-scroll-speed="-3">
-        
-        <div id="heading">
-            <h1 id="heading-title">DISCOVER YOUR NEXT OBSESSION.  </h1>
-    
-        </div>
-        <button  data-scroll
-        data-scroll-speed="3"
-        data-scroll-direction="vertical">
-            Scroll Down 
-            <i class="fa-solid fa-chevron-down fa-beat fa-l"></i>
-        </button>
-        <!-- <h1>
-          
-          Welcome<br />
-          to <span>ONLINE</span> <br />
-          <button
-          data-scroll
-          data-scroll-speed="3"
-          data-scroll-direction="horizontal"
-        >
-          shop.
-        </button>
-        </h1> -->
- 
-        <!-- <img
-          data-scroll
-          data-scroll-speed="-4"
-          data-scroll-direction="horizontal"
-          id="img1"
-          src="./images/m502t0010_06jun22_smart_watch_02-removebg-preview.png"
-        />
-        <img
-          data-scroll
-          data-scroll-speed="4"
-          data-scroll-direction="horizontal"
-          id="img2"
-          src="./images/istockphoto-1222035117-612x612-removebg-preview.png"
-        />
-        <img data-scroll
-        data-scroll-speed="-4"
-        data-scroll-direction="horizontal"
-         id="img3" 
-         src="./images/pexels-mearlywan-307951439-15569181-removebg-preview.png"> -->
 
-         <!-- <img data-scroll
-         data-scroll-speed="4"
-         data-scroll-direction="horizontal" id="img4" src="./images/pexels-polina-tankilevitch-4522993-removebg-preview.png"> -->
-      </div>
+      <div id="page1" data-scroll data-scroll-speed="-3">
+
+        
+        
+        
+       
+        
+      
+    </div>
       <div id="page2" data-scroll data-scroll-speed="0">
         <div
           class="elem"
           data-img="https://static.zara.net/assets/public/9e35/d7ae/3b4542cba3a5/d368ad95a2ce/image-landscape-default-fill-fa08864a-565b-442d-b52d-1a2d3031db34-default_0.jpg?ts=1713799584520&w=1920"
+
+         
         >
-          <a href="../men/men.html"><h2>Men.</h2></a>
+          <h2><a href="../men/men.html">Men.</a></h2>
 
           <div class="moving">
             <div class="blur"></div>
@@ -159,44 +140,44 @@
               <h5>Your Online Shop</h5>
             </div>
           </div>
-        
+          
         </div>
         <div
-        class="elem"
-        data-img="https://static.zara.net/assets/public/9e35/d7ae/3b4542cba3a5/d368ad95a2ce/image-landscape-default-fill-fa08864a-565b-442d-b52d-1a2d3031db34-default_0.jpg?ts=1713799584520&w=1920"
-      >
-        <a href="../aditicsy/womenn.html"><h2>Women.</h2></a>
+          class="elem"
+          data-img="https://static.zara.net/assets/public/9e35/d7ae/3b4542cba3a5/d368ad95a2ce/image-landscape-default-fill-fa08864a-565b-442d-b52d-1a2d3031db34-default_0.jpg?ts=1713799584520&w=1920"
 
-        <div class="moving">
-          <div class="blur"></div>
-          <div class="moving-in">
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
+         
+        >
+          <h2><a href="../Newfolder/women1.html">Women.</a></h2>
+
+          <div class="moving">
+            <div class="blur"></div>
+            <div class="moving-in">
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+            </div>
+            <div class="moving-in">
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+            </div>
+            <div class="moving-in">
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+              <h5>Your Online Shop</h5>
+            </div>
           </div>
-          <div class="moving-in">
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
-          </div>
-          <div class="moving-in">
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
-            <h5>Your Online Shop</h5>
-          </div>
+          
         </div>
-        <!-- <h2>Accessories.</h2>
-          <h2>Shoes.</h2>
-          <h2>Gadgets.</h2> -->
-      </div>
-        <!-- <div
+        <div
           class="elem"
           data-img="https://india.ray-ban.com/media/wysiwyg/Rb_sunglasses_clp_opti/07_Sunglasses_Page_Hero_Banner_Desktop_-_1920x800px.jpg"
         >
-          <h2>Accessories.</h2>
+          <h2><a href="../Gadgets/gadgets copy.html">Gadgets.</a></h2>
           <div class="moving">
             <div class="blur"></div>
             <div class="moving-in">
@@ -218,13 +199,13 @@
               <h5>Your Online Shop</h5>
             </div>
           </div>
-       
-        </div> -->
+
+        </div>
         <div
           class="elem"
           data-img="https://cdn.sanity.io/images/qa41whrn/prod/b7b17bebde24140ced818cba04f3b2f4d11a455a-12000x4333.jpg?w=2160&q=80&auto=format"
         >
-          <a href="../shoes/category1.html"><h2>Shoes.</h2></a>
+          <h2><a href="../shoes/category1.html">Shoes.</a></h2>
           <div class="moving">
             <div class="blur"></div>
             <div class="moving-in">
@@ -250,11 +231,11 @@
             <h2>Shoes.</h2>
             <h2>Gadgets.</h2> -->
         </div>
-        <div
+        <!-- <div
           class="elem"
           data-img="https://www.samsung.com/global/galaxy/main/images/kv_galaxy-watch6.jpg"
         >
-        <a href="../Gadgets/gadgets.html"><h2>Gadgets.</h2></a>
+          <h2>Gadgets.</h2>
           <div class="moving">
             <div class="blur"></div>
             <div class="moving-in">
@@ -276,182 +257,150 @@
               <h5>Your Online Shop</h5>
             </div>
           </div>
-          <!-- <h2>Accessories.</h2>
-            <h2>Shoes.</h2>
-            <h2>Gadgets.</h2> -->
-        </div>
-      </div>
-      <section class="section service">
-        <div class="container">
+          
+        </div>-->
+      </div> 
 
-          <ul class="service-list">
-
-            <li class="service-item">
-              <div class="item-icon">
-                <img src="service-icon-1.png" width="40" height="40" loading="lazy" alt="Truck icon">
-              </div>
-
-              <h3 class="h3 item-title">Free Shipping</h3>
-            </li>
-
-            <li class="service-item">
-              <div class="item-icon">
-                <img src="service-icon-2.png" width="40" height="40" loading="lazy"
-                  alt="Payment card icon">
-              </div>
-
-              <h3 class="h3 item-title">Safe Payment</h3>
-            </li>
-
-            <li class="service-item">
-              <div class="item-icon">
-                <img src="service-icon-3.png" width="40" height="40" loading="lazy" alt="Helpline icon">
-              </div>
-
-              <h3 class="h3 item-title">24/7 Support</h3>
-            </li>
-
-          </ul>
-
-        </div>
-      </section>
-      <div id="page3"  >
-        <h1>TOP PICKS.</h1>
-
-        <div id="products">
+      
+     
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="./images/Untitled design.png" >
+           
+            <img src="./images/HOME DECOR (1).png">
             
-            <div   id ="product1">
-                <img
-          
-               
-                id="img1"
-                src="./images/04_FlyoutNAV_NA_dt.jpg"
-                
-              />
-              <h1 id="shirt">Polo T-Shirt</h1>
-              <!-- <h3>$34</h3>
-              <button id="cart-btn" >Add to Cart</button>
-              <i class="fa-regular fa-heart fa-2xl  wishlist-btn" id="wishlist-btn"></i> -->
-            </div>
-
-            <!-- /////////////////////////////////////// -->
-            <div id ="product1">
-                <img
-          
-          
-                id="img1"
-                src="./images/pexels-wendelmoretti-1972115.jpg"
-                
-              />
-              <h1 id="shirt">Nike Zoom</h1>
-              <!-- <h3>$64</h3>
-              <button id="cart-btn" >Add to Cart</button>
-              <i class="fa-regular fa-heart fa-2xl" id="wishlist-btn"></i> -->
-            </div>
-
-
-            <!-- ///////////////////////////////////////////////////////// -->
-         
-            <div id ="product1">
-                <img
-          
-          
-                id="img1"
-                src="./images/pexels-raulkingr-1578531.jpg"
-                
-              />
-              <h1 id="shirt">Fossil</h1>
-              <!-- <h3>$54</h3>
-              <button id="cart-btn" >Add to Cart</button>
-              <i class="fa-regular fa-heart fa-2xl" id="wishlist-btn"></i> -->
-            </div>
-
-
-            <!-- /////////////////////////////////////////////////// -->
-            <div id ="product1">
-                <img
-          
-          
-                id="img1"
-                src="./images/pexels-frendsmans-1926767.jpg"
-                
-              />
-              <h1 id="shirt">Ray-ban </h1>
-              <!-- <h3>$14</h3>
-              <button id="cart-btn" >Add to Cart</button>
-              <i class="fa-regular fa-heart fa-2xl" id="wishlist-btn"></i> -->
-            </div>
+            <img src="./images/WOMEN.png">
             
-        </div>
+           
+          
+            <img src="./images/SKIN CARE.png">
+           
+
+
+          </div>
+          <div class="swiper-slide">
+            <img src="./images/WATCH.png">
+            <img src="./images/SHOES (1).png">
+            <img src="./images/FRAG.png">
+            <img src="./images/SUNGLASS.png">
         
+          </div>
+        
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      
       </div>
+<div id="shop-Offers" >
+      <div class="offer-cards">
+        <div class="top-banner">
+          <a href="">
+            <img src="img/poster-fresh-in-fashion-header.avif" alt="">
+          </a>
+        </div>
 
-<!-- //////////////////////////////////////////////// -->
-      <div id="page6">
-        <div id="products">
-            
-            <div   id ="product1">
-                <img
-          
-               
-                id="img2"
-                src="./images/pexels-cottonbro-3945659.jpg"
-                
-              />
-              <h1 id="shirt">GAMING</h1>
-              <!-- <h3>$34</h3>
-              <button id="cart-btn" >Add to Cart</button>
-              <i class="fa-regular fa-heart fa-2xl  wishlist-btn" id="wishlist-btn"></i> -->
+        <!-- grid part -->
+         <div class="banner-grid">
+          <div class="top-left grid-img">
+            <a href="../shoes/category1.html">
+              <img src="img/puma-reebok-min50-banner.avif" alt="">
+            </a>
+          </div>
+
+          <div class="top-right grid-img">
+            <a href="../Newfolder/women1.html">
+              <img src="img/women-KianaHouseoffashion-MIN50.jpg" alt="">
+            </a>
+          </div>
+
+          <div class="middle-left grid-img">
+            <a href="../men/men.html">
+              <img src="img/Cloth-Britishclub-Under699.webp" alt="">
+            </a>
+          </div>
+
+          <div class="middle-left grid-img">
+            <a href="">
+              <img src="img/sumglasses-lovemoschino-min50.avif" alt="">
+            </a>
+          </div>
+
+          <div class="bottom-left grid-img">
+            <a href="../shoes/category1.html">
+              <img src="img/sportswear-Nike-ADidas-Min35.webp" alt="">
+            </a>
+          </div>
+
+          <div class="bottom-right grid-img">
+            <a href="">
+              <img src="img/homedecor-urbanspace-mafatlal-flat60.avif" alt="">
+            </a>
+          </div>
+        </div>
+
+        <!-- card part-->
+
+        <div class="top-banner">
+          <a href="">
+            <img src="img/card-upper-Sunkissed strip.webp" alt="">
+          </a>
+        </div>
+
+        <div class="discounted-cards">
+          <div class="cards-grid">
+            <div class="first card-img">
+              <a href="../shoes/category1.html">
+                <img src="img/card-puma-uspa-min50.avif" alt="">
+              </a>
             </div>
-<!-- /////////////////////////////////////////////////////// -->
-            <div   id ="product1">
-                <img
-          
-               
-                id="img2"
-                src="./images/pexels-diimejii-2397351.jpg"
-                
-              />
-              <h1 id="shirt">HOME DECOR</h1>
-              <!-- <h3>$34</h3>
-              <button id="cart-btn" >Add to Cart</button>
-              <i class="fa-regular fa-heart fa-2xl  wishlist-btn" id="wishlist-btn"></i> -->
+
+            <div class="second card-img">
+              <a href="../Gadgets/gadgets copy.html">
+                <img src="img/card-watch-sonata-fastrack-upto30.avif" alt="">
+              </a>
             </div>
-<!-- //////////////////////////////////////////////////// -->
-            <div   id ="product1">
-                <img
-          
-               
-                id="img2"
-                src="./images/pexels-adrienne-andersen-1174503-2661256.jpg"
-                
-              />
-              <h1 id="shirt">BEAUTY PRODUCTS</h1>
-              <!-- <h3>$34</h3>
-              <button id="cart-btn" >Add to Cart</button>
-              <i class="fa-regular fa-heart fa-2xl  wishlist-btn" id="wishlist-btn"></i> -->
+
+            <div class="third card-img">
+              <a href="../Newfolder/women1.html">
+                <img src="img/card-women-gulmoharjaipur-avaasa-min60.avif" alt="">
+              </a>
             </div>
-<!-- /////////////////////////////////////////////////////////// -->
-            <div   id ="product1">
-                <img
-          
-               
-                id="img2"
-                src="./images/pexels-valeriya-1961791.jpg"
-                
-              />
-              <h1 id="shirt">FRAGRANCES</h1>
-              <!-- <h3>$34</h3>
-              <button id="cart-btn" >Add to Cart</button>
-              <i class="fa-regular fa-heart fa-2xl  wishlist-btn" id="wishlist-btn"></i> -->
+
+            <div class="fourth card-img">
+              <a href="../men/men.html">
+                <img src="img/cards-thebearhouse-min50.avif" alt="">
+              </a>
             </div>
-            </div>
-          
-                   
-            
-                        
+
+          </div> 
+        </div>
+
+        <!-- free delivery banner -->
+
+        <!-- <div class="free-delivery-banner">
+          <div class="delivery-banner">
+            <img src="img/free-delivery-gif-banner.gif" alt="">
+          </div>
+        </div>
+
+        <div class="upcoming-deals">
+          <div class="deal-banner">
+            <img src="img/poster-upcoming-bag-Min70-2.avif" alt="">
+          </div>
+        </div> -->
+
       </div>
+    </div>
 
+
+
+    
+    
+   
+     
+        
+    
       <section class="cta">
         <div class="container">
 
@@ -468,51 +417,132 @@
 
            
           </a>
+          <h3 id="cta-join">Become a member for extra discount</h3>
 
         </div>
       </section>
+      
+      
+     
+
+
+
+
+
+      
+      <div id="page3"  >
+        <div class="top-products">
+          
+        <div class="left">
+          <img src="./images/pexels-cottonbro-3945659-removebg-preview (1).png" >
+        </div>
+        <div id="about-product" >
+          <h1 >Introducing the PS5 console and accessories</h1>
+          <h5>DualSense Edge™ Wireless Controlle</h5>
+         <p>Get an edge in gameplay with remappable buttons, tuneable triggers and sticks,
+           changeable stick caps, back buttons, and more.</p>
+           <button>Shop Now</button>
+
+            
+        </div>
+        </div>          
+        
+        
+      </div>
+
+
+      <div id="page6">
+        <div class="top-products">
+          
+          <div id="about-product">
+            <h1 class="text" >Frame : Pine Wood & Commercial Grade Plywoods</h1>
+            <!-- <h5>DualSense Edge™ Wireless Controlle</h5> -->
+           <p>Upholstery : Fabric
+            Thickness : 290
+            Seating Mechanism : S Spring
+            Foam : PU Foam 32D</p>
+             <button>Shop Now</button>
+          </div>
+          <div class="left" >
+           
+  
+             <img id="chair" src="./images/pexels-martinpechy-1866149-removebg-preview (1).png" >
+
+          </div>
+          </div>
+            
+
+
+          
+          
+                   
+            
+                        
+      </div>
+
+
+      <div id="product-card">
+        <div>
+          <img src="./images/pop-up-02.jpg" >
+          <h2>Most Viewed</h2>
+        </div>
+        <div><img src="./images/e1-desk.webp" >
+          <h2>New Arrivals</h2>
+        </div>
+        <div><img src="./images/pexels-mikhail-nilov-8454899.jpg" >
+          <h2>Best Seller</h2>
+        </div>
+        <div><img src="./images/04_FlyoutNAV_NA_dt.jpg" >
+          <h2>Top Rated</h2>
+        </div>
+        <div><img src="./images/pexels-diimejii-2397351.jpg" >
+          <h2>High Discounts</h2>
+        </div>
+        
+        
+    
+       
+       
+    
+      </div>
+      <div id="members">
+        <h1>BECOME A TRIBE MEMBER <br/> AND ENJOY THESE BENIFITS</h1>
+        <div id="member-icons">
+          <div>
+            <img src="./icons/delivery_3063822.png" >
+            <h2>Fast Delivery</h2>
+          </div>
+          <div>
+            <img src="./icons/discount_726476.png" >
+            <h2>Discounts</h2>
+          </div>
+          <div>
+            <img src="./icons/coupon_1831655.png" >
+            <h2>Special Offers</h2>
+          </div>
+          <div>
+             
+          <img src="./icons/cash-on-delivery_5553186.png" >
+            <h2>Cash on Delivery</h2>
+          </div>
+          
+         
+        
+    
+        </div>
+    
+        <p>Join now and get exclusive benefits</p>
+        <button>JOIN NOW</button>
+    
+    
+      </div>
+
+      
         
       
-      <div id="page4">
-        <div id="category"> 
-            <div id="cat1">
-                <a href="../men/men.html"><img data-scroll
-                  data-scroll-speed="3"
-                  data-scroll-direction="horizontal" src="./images/IMG-20230811-WA0005.jpg"  ></a>
-                <h2>MEN.</h2>
-            </div>
-            
-             <div id="cat1">
-                <a href="../aditicsy/womenn.html"><img data-scroll
-                  data-scroll-speed="3"
-                  data-scroll-direction="horizontal" src="./images/clth.jpg"  ></a>
-                <h2 style="margin-left: 20px;">WOMEN.</h2> 
-            </div>
+ 
 
-        </div>
-
-      </div>
-
-      <div id="page5">
-        <div id="category"> 
-            <div id="cat1">
-                <a href="../Gadgets/gadgets.html"><img data-scroll
-                  data-scroll-speed="3"
-                  data-scroll-direction="horizontal" src="./images/kv_galaxy-z-fold5.jpg"  ></a>
-                <h2>GADGETS.</h2>
-            </div>
-          
-             <div id="cat1">
-                <a href="../shoes/category1.html"><img data-scroll
-                  data-scroll-speed="3"
-                  data-scroll-direction="horizontal" src="./images/shs (1).jpg"  ></a>
-                <h2>SHOES.</h2> 
-            </div>
-
-        </div>
-
-      </div>
-
+    
 
 
 
@@ -571,6 +601,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
     <script src="scripts.js"></script>
   </body>

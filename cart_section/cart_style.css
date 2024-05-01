@@ -35,7 +35,9 @@ body {
     display: flex;
     justify-content: space-between;
 }
-
+#logo{
+    color: black;
+}
 #nav-ul {
     list-style-type: none;
     display: flex;

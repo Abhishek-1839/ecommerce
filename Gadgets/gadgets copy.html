@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="gad1.css">
+</head>
+
+<body>
+
+  
+  <nav class="navbar">
+    <a href="../ecomerce-web/index.html" class="nav-cname">
+      <h1>shop.</h1>
+    </a>
+    <div class="hamburger">
+      <span class="baro"></span>
+      <span class="baro"></span>
+      <span class="baro"></span>
+    </div>
+    <div class="rightpart">
+      <ul class="nav-menu">
+        <li class="nav-item">
+          <a href="../ecomerce-web/index.html" class="nav-link">Home</a>
+        </li>
+        <li class="nav-item">
+          <a href="../men/men.html" class="nav-link">Men</a>
+        </li>
+        <li class="nav-item">
+          <a href="../Newfolder/women1.html" class="nav-link">Women</a>
+        </li>
+        <li class="nav-item">
+          <a href="./gadgets copy.html" class="nav-link">Gadgets</a>
+        </li>
+        <li class="nav-item">
+          <a href="../shoes/category1.html" class="nav-link">Shoes</a>
+        </li>
+      </ul>
+      <ul class="icon">
+        <li>
+          <a href="../cart_section/carts.html"><i class="fa-solid fa-cart-shopping fa-lg"></i></a>
+        </li>
+        <li>
+          <a href="../ecomerce-web/signUp.html"><i class="fa-regular fa-user fa-lg"></i></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+
+
+
+
+  <!-- cards section -->
+  <section class="hero">
+
+    <div class="hero-text">
+      <h1>Discover Your Perfect Gadgets.</h1>
+      <a href="../ecomerce-web/index.html">shop.</a>
+    </div>
+    <div id="hero-overlay"></div>
+  </section>
+
+  <div id="container">
+    <div class="offer">
+      <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="50">
+        <h1>SUMMER OFFER 100% OFF</h1>
+      </marquee>
+    </div>
+    <!-- <div class="offer-1">
+            <marquee behavior="scroll" direction="left" scrollamount="10" scrolldelay="75"><h1>SUMMER OFFER 100% OFF</h1></marquee>
+        </div> -->
+    <div class="filter">
+      <h3 style="font-size: 30px; font: bolder;margin-left: 20px;">FILTERS</h3>
+      <hr style="margin-left: 16px;">
+      <div class="filter-category">
+        <h4 style="margin-left: 32px;margin-top: 48px;font-size: 22px;">Most Popular</h4>
+        <div class="filter-options" style="margin-left: 40px;margin-top: 10px;font-size: 15px;margin-bottom: 30px;">
+          <label><input type="checkbox" name="size" value="xs">Apple Vision Pro</label><br>
+          <label><input type="checkbox" name="size" value="s"> Samsung Balle</label><br>
+          <label><input type="checkbox" name="size" value="m">Rabbit R1</label><br>
+          <label><input type="checkbox" name="size" value="l">  Humane AI Pin</label><br>
+          <label><input type="checkbox" name="size" value="xl"> Unitree Go2</label><br>
+          <!-- Add more size options as needed -->
+        </div>
+      </div>
+      <div class="filter-category">
+        <h4 style="margin-left: 32px;margin-top: 48px;font-size: 22px;">Top Categories</h4>
+        <div class="filter-options" style="margin-left: 40px;margin-top: 10px;font-size: 15px;margin-bottom: 30px;">
+          <label><input type="checkbox" name="color" value="red"> Cool New Gadgets</label><br>
+          <label><input type="checkbox" name="color" value="blue"> Travel Gadgets</label><br>
+          <label><input type="checkbox" name="color" value="green"> Smart Home and IoT</label><br>
+          <label><input type="checkbox" name="color" value="black"> Office Gadgets</label><br>
+          <label><input type="checkbox" name="color" value="purple"> Pet Accessories</label><br>
+          <label><input type="checkbox" name="color" value="white"> Gaming Gadgets</label><br>
+          <label><input type="checkbox" name="color" value="olivegreen"> Tech and Gadgets</label><br>
+          <label><input type="checkbox" name="color" value="yellow"> Vacuums</label><br>
+          <label><input type="checkbox" name="color" value="maroon"> Smart Living</label><br>
+          <!-- Add more color options as needed -->
+        </div>
+      </div>
+
+      <!-- Brand Filter -->
+      <div class="filter-category">
+        <h4 style="margin-left: 32px;margin-top: 48px;font-size: 22px;">BRAND</h4>
+        <div class="filter-options" style="margin-left: 40px;margin-top: 10px;font-size: 15px;margin-bottom: 30px;">
+          <label><input type="checkbox" name="brand" value="nike"> Asus</label><br>
+          <label><input type="checkbox" name="brand" value="adidas"> Acer</label><br>
+          <label><input type="checkbox" name="brand" value="puma"> Philips</label><br>
+          <label><input type="checkbox" name="brand" value="highlander"> Samsung</label><br>
+          <label><input type="checkbox" name="brand" value="roadster"> Lenovo</label><br>
+          <label><input type="checkbox" name="brand" value="wrogn"> hp</label><br>
+          <label><input type="checkbox" name="brand" value="arrow"> Apple</label><br>
+          <label><input type="checkbox" name="brand" value="levis"> Sony</label><br>
+          <label><input type="checkbox" name="brand" value="sree"> Blackberry</label><br>
+          <!-- Add more brand options as needed -->
+        </div>
+      </div>
+      <div class="filter-category">
+        <h4 style="margin-left: 32px;margin-top: 48px;font-size: 22px;">PRICE</h4>
+        <div class="filter-options" style="margin-left: 40px;margin-top: 10px;font-size: 15px;margin-bottom: 30px;">
+          <label><input type="checkbox" name="price" value="p1"> Rs. 249 to Rs. 499</label><br>
+          <label><input type="checkbox" name="price" value="p2"> Rs. 499 to Rs. 999</label><br>
+          <label><input type="checkbox" name="price" value="p3"> Rs. 999 to Rs. 1499</label><br>
+          <label><input type="checkbox" name="price" value="p4"> Rs. 1499 to Rs. 1999</label><br>
+          <label><input type="checkbox" name="price" value="p5"> Rs. 1999 and above</label><br>
+          <!-- Add more size options as needed -->
+        </div>
+      </div>
+      <div class="filter-category">
+        <h4 style="margin-left: 32px;margin-top: 48px;font-size: 22px;">DISCOUNTS</h4>
+        <div class="filter-options" style="margin-left: 40px;margin-top: 10px;font-size: 15px;margin-bottom: 30px;">
+          <label><input type="checkbox" name="disc" value="d1"> 10% and above</label><br>
+          <label><input type="checkbox" name="disc" value="d2"> 20% and above</label><br>
+          <label><input type="checkbox" name="disc" value="d3"> 30% and above</label><br>
+          <label><input type="checkbox" name="disc" value="d4"> 40% and above</label><br>
+          <label><input type="checkbox" name="disc" value="d5"> 50% and above</label><br>
+          <label><input type="checkbox" name="disc" value="d5"> 60% and above</label><br>
+          <label><input type="checkbox" name="disc" value="d5"> 70% and above</label><br>
+          <label><input type="checkbox" name="disc" value="d5"> 80% and above</label><br>
+          <label><input type="checkbox" name="disc" value="d5"> 90% and above</label><br>
+        </div>
+      </div>
+      <br>
+      <br>
+      <br>
+      <hr>
+    </div>
+    <div class="right">
+
+
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/Headphone.avif">
+            </div>
+            <div class="contentBx">
+              <h2>Headphone<br><span>Black Color Headgear</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star"
+                  style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹2400</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+
+              <div id="button">
+                <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                <button id="buy" ><a href="/" style="color: azure;">Buy Now</a></button>
+              </div>
+
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/Camera.jpeg">
+            </div>
+            <div class="contentBx">
+              <h2>Camera<br><span>DSLR</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star"
+                  style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹18000</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="">
+                <div id="button">
+                  <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                  <button id="buy"><a href="/" style="color: azure;">Buy Now</a></button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/Earpods.avif">
+            </div>
+            <div class="contentBx">
+              <h2>Earpods<br><span>White Color earbuds</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star"
+                  style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹2200</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="">
+                <div id="button">
+                  <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                  <button id="buy"><a href="/" style="color: azure;">Buy Now</a></button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/Gaming Consile.avif">
+            </div>
+            <div class="contentBx">
+              <h2>GameConsole<br><span>Latest Gaming Console</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star"
+                  style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹38000</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="">
+                <div id="button">
+                  <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                  <button id="buy"><a href="/" style="color: azure;">Buy Now</a></button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/Laptop.avif">
+            </div>
+            <div class="contentBx">
+              <h2>Laptops<br><span>High Performance Laptop</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star"
+                  style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹83000</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="">
+                <div id="button">
+                  <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                  <button id="buy"><a href="/" style="color: azure;">Buy Now</a></button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/PS6.png">
+            </div>
+            <div class="contentBx">
+              <h2>PS6<br><span>PlayStation 6</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star"
+                  style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹180000</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="">
+                <div id="button">
+                  <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                  <button id="buy"><a href="/" style="color: azure;">Buy Now</a></button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/iphonexs.avif">
+            </div>
+            <div class="contentBx">
+              <h2>IPHONEXS<br><span>iphonexs</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹140000</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="">
+                <div id="button">
+                  <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                  <button id="buy"><a href="/" style="color: azure;">Buy Now</a></button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/RGbkeyboard.avif">
+            </div>
+            <div class="contentBx">
+              <h2>RGB Keyboard<br><span>RGB Keyboard for Gaming</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star"
+                  style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹2900</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="">
+                <div id="button">
+                  <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                  <button id="buy"><a href="/" style="color: azure;">Buy Now</a></button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container">
+        <div class="card">
+          <div class="content">
+            <div class="imgBx">
+              <img src="./img/applewatch.avif">
+            </div>
+            <div class="contentBx">
+              <h2>Apple Watch<br><span>Apple Watch Series</span></h2>
+              <h4> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i
+                  class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star"
+                  style="color: #FFD43B;"></i> <i class="fa-sharp fa-solid fa-star" style="color: #FFD43B;"></i><i
+                  class="fa-sharp fa-regular fa-star" style="color: #FFD43B;"></i></h4>
+              <h3>₹25000</h3>
+            </div>
+          </div>
+          <ul class="sci">
+            <li>
+              <a href="">
+                <div id="button">
+                  <button id="cart"><a href="/"> <i class="fa-solid fa-cart-shopping"></i></a></button>
+                  <button id="buy"><a href="/" style="color: azure;">Buy Now</a></button>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section class="review" id="review">
+    <h1 class="heading"> Customer's Review</h1>
+
+    <div class="review-slider">
+        <div class="box" id="box1">
+            <p> It shines with its vast, cutting-edge gadget selection. Its sleek interface and detailed reviews make shopping easy and informative. Exceptional customer support and fast shipping further solidify its reputation as a top choice for tech enthusiasts.</p>
+            <div class="customer">
+                <h3>Sourya Shukla</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="box2">
+            <p>Gadget Zone excels with an intuitive design and a comprehensive catalog of the latest tech. Clear product descriptions and competitive pricing, paired with rapid delivery and responsive support, make it a premier destination for tech aficionados.</p>
+            <div class="customer">
+                <h3>Pradum Shukla</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="box" id="box3">
+            <p>TechHub offers a seamless shopping experience with an extensive selection of innovative gadgets. Its user-friendly site, detailed specs, and competitive prices, coupled with swift shipping and excellent customer care, make it a go-to for tech enthusiasts.
+            </p>
+            <div class="customer">
+                <h3>Suyash Mishra</h3>
+                <div class="stars">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+</section>
+
+  <!-- footer section -->
+  <footer class="footer">
+    <div class="footer-left">
+      <h3>Payment Method</h3>
+      <div class="credit-cards">
+        <img src="img/visa.png" alt="">
+        <img src="img/mastercard.png" alt="">
+        <img src="img/paypal.png" alt="">
+      </div>
+      <p class="copyright">2024 shop.</p>
+    </div>
+
+    <div class="footer-center">
+      <div>
+        <i class="fa fa-map-marker"></i>
+        <p><span>India</span> Delhi</p>
+      </div>
+      <div>
+        <i class="fa fa-phone"></i>
+        <p>+91 077-777-77</p>
+      </div>
+      <div>
+        <i class="fa fa-envelope"></i>
+        <p><a href="#">support@gmail.com</a></p>
+      </div>
+    </div>
+
+    <div class="footer-right">
+      <p class="footer-about">
+        <span>About</span>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum facilis ab qui repudiandae corporis
+        nesciunt exercitationem ad quidem aperiam, eveniet tempora maxime sint doloremque iure dolorum, eius
+        veritatis rerum magni.
+      </p>
+
+      <div class="footer-media">
+        <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></i></a>
+        <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter fa-lg"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube fa-lg"></i></a>
+
+      </div>
+    </div>
+
+  </footer>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+      const hamburger = document.querySelector(".hamburger");
+      const navMenu = document.querySelector(".nav-menu");
+
+      hamburger.addEventListener("click", function () {
+        hamburger.classList.toggle("active");
+        navMenu.classList.toggle("active");
+      });
+      const cards = document.querySelectorAll('.card');  // Select all cards
+
+      cards.forEach(card => {
+        card.addEventListener('click', function () {
+          card.classList.toggle('expanded');
+          const expandedDetails = card.querySelector('#expanded-details');
+          expandedDetails.style.display = expandedDetails.style.display === 'none' ? 'block' : 'none';
+        });
+      });
+
+    });</script>
+
+</body>
+
+</html>
