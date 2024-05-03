@@ -337,7 +337,7 @@ body {
 }
 
 .container .card:hover .content {
-	transform: translateY(-20px);
+	transform: translateY(-40px);
 }
 
 .container .card .content .imgBx {

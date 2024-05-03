@@ -9,49 +9,38 @@ var swiper = new Swiper(".mySwiper", {
         disableOnInteraction: false,
       },
   });
-//   var swiper = new Swiper(".mySwiper", {
-//     speed: 600,
-//     parallax: true,
-//     pagination: {
-//       el: ".swiper-pagination",
-//       clickable: true,
-//     },
-//     navigation: {
-//       nextEl: ".swiper-button-next",
-//       prevEl: ".swiper-button-prev",
-//     },
-//   });
-function loading(){
-    var tl=gsap.timeline()
-tl.to('#yellow1',{
 
-    top:"-100%",
-    delay:0.5,
-    duration:0.5,
-    ease:"expo.out"
-});
-tl.from("#yellow2",{
-    top:"100%",
-    delay:0.5,
-    duration:0.5,
-    ease:"expo.out"
+// function loading(){
+//     var tl=gsap.timeline()
+// tl.to('#yellow1',{
 
-},"anim");
-tl.to(".loaders h1",{
+//     top:"-100%",
+//     delay:0.5,
+//     duration:0.5,
+//     ease:"expo.out"
+// });
+// tl.from("#yellow2",{
+//     top:"100%",
+//     delay:0.5,
+//     duration:0.5,
+//     ease:"expo.out"
 
-    delay:0.6,
-    duration:0.5,
-    color:"black",
-},"anim");
+// },"anim");
+// tl.to(".loaders h1",{
 
-tl.to(".loaders ",{
-    opacity:0,
-})
-tl.to(".loaders ",{
-    display:"none",
-})
-}
-loading();
+//     delay:0.6,
+//     duration:0.5,
+//     color:"black",
+// },"anim");
+
+// tl.to(".loaders ",{
+//     opacity:0,
+// })
+// tl.to(".loaders ",{
+//     display:"none",
+// })
+// }
+// loading();
 
 const scroll = new LocomotiveScroll({
     el: document.querySelector('#main'),
